@@ -4,7 +4,15 @@ const Meals = () => {
   return (
     <>
       <h1>Meals Page</h1>
-      <Link href="/meals/share">Share</Link>
+      <p>
+        <Link href="/meals/share">Share</Link>
+      </p>
+      <p>
+        <Link href="/meals/burger">Burger</Link>
+      </p>
+      <p>
+        <Link href="/meals/pizza">Pizza</Link>
+      </p>
     </>
   );
 };
