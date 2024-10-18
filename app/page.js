@@ -7,8 +7,12 @@ export default function Home() {
         Time to get started!
       </h1>
       <nav>
-        <Link href="/meals">Meals Here</Link>
-        <Link href="/community">Meals Here</Link>
+        <p>
+          <Link href="/meals">Meals Here</Link>
+        </p>
+        <p>
+          <Link href="/community">Community</Link>
+        </p>
       </nav>
     </main>
   );
