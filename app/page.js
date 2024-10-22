@@ -8,7 +8,10 @@ export default function Home() {
       </h1>
       <nav>
         <p>
-          <Link href="/meals">Meals Here</Link>
+          <Link href="/meals">Meals</Link>
+        </p>
+        <p>
+          <Link href="/meals/share">Share Meal</Link>
         </p>
         <p>
           <Link href="/community">Community</Link>

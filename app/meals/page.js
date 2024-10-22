@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const Meals = () => {
+const MealsPage = () => {
   return (
     <>
       <h1>Meals Page</h1>
@@ -17,4 +17,4 @@ const Meals = () => {
   );
 };
 
-export default Meals;
+export default MealsPage;
