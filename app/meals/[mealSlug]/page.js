@@ -6,6 +6,8 @@ import { getMeal } from "@/lib/meals";
 const MealPage = ({ params }) => {
   const meal = getMeal(params.mealSlug);
 
+  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+
   if (!meal) {
     notFound();
   }
@@ -16,7 +18,11 @@ const MealPage = ({ params }) => {
     <>
       <header className={styles.header}>
         <div className={styles.image}>
-          <Image src={meal.image} alt={meal.title} fill />
+          <Image
+            src={`${supabaseUrl}/storage/v1/object/public/FoodiesApp/${meal.image}`}
+            alt={meal.title}
+            fill
+          />
         </div>
         <div className={styles.headerText}>
           <h1>{meal.title}</h1>
